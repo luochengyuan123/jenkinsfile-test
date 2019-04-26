@@ -3,7 +3,6 @@ echo 'Hello Mr.${username}'
 echo "I said, hello Mr.${username}"
 
 echo "running ${env.BUILD_ID} on ${env.JOB_NAME}"
-echo "${env.JENKINS_URL}"
 node('jenkins-jnlp') {
     stage ('Build'){
             echo "Build"
