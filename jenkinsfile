@@ -1,19 +1,17 @@
 node('jenkins-jnlp') {
-    stages {
-        stage ('Build'){
-            steps {
-                echo "Build"
-            }
+    stage ('Build'){
+        steps {
+            echo "Build"
         }
-        stage ("test") {
-            steps{
-                echo "test"
-            }
+    }
+    stage ("test") {
+        steps{
+            echo "test"
         }
-        stage ("deploy"){
-            steps{
-                echo "deploy"
-            }
+    }
+    stage ("deploy"){
+        steps{
+            echo "deploy"
         }
     }
 }
